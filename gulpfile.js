@@ -29,3 +29,10 @@ gulp.task("bootstrapJS", function(){
   ])
   .pipe(gulp.dest("assets/bootstrap/js"));
 });
+
+gulp.task("jquery", function(){
+  return gulp.src([
+    "node_modules/jquery/dist/jquery.min.js",
+  ])
+  .pipe(gulp.dest("assets/jquery"));
+});
