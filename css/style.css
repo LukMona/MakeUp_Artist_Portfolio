@@ -148,7 +148,7 @@ header .site-heading .gold-link {
   padding-left: 40px;
   border-bottom: 2px solid #EBBA4D;
   position: relative;
-  top: -35px;
+  top: -40px;
 }
 
 .services-details .service-description {
@@ -174,4 +174,37 @@ header .site-heading .gold-link {
 
 .services-main-book a {
   color: #EBBA4D;
+}
+
+#about {
+  background-color: #FDFDFD;
+}
+
+#about .about-header {
+  margin-top: 15%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+#about .about-header h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+#about .about-header h1 .gold-dot {
+  font-size: 4rem;
+  color: #EBBA4D;
+}
+
+#about .about-main {
+  margin-bottom: 15%;
+}
+
+#about .about-main .about-text {
+  margin-top: 5%;
+}
+
+#about .about-main p {
+  font-style: italic;
 }
