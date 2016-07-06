@@ -37,3 +37,53 @@
   color: #EBBA4D;
   transition: color 0.4s ease 0s;
 }
+
+header {
+  background-image: url("../images/brush.jpg");
+  background-color: grey;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header .site-heading {
+  padding: 100px 0 50px;
+  color: #202020;
+  text-align: center;
+}
+
+header .site-heading h1 {
+  margin-top: 0;
+  font-size: 50px;
+}
+
+header .site-heading h1:nth-child(2) {
+  letter-spacing: 25px;
+  word-spacing: -60px;
+}
+
+header .site-heading span {
+  color: #EBBA4D;
+}
+
+header .site-heading h2 {
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+
+header .site-heading .header-portoflio-link {
+  font-size: 2rem;
+  color: #EBBA4D;
+}
+
+header .site-heading .page-header {
+  border-bottom: none;
+}
+
+@media only screen and (min-width: 768px) {
+  header .site-heading {
+    padding: 150px 0;
+  }
+  header .site-heading h1 {
+    font-size: 80px;
+  }
+}
