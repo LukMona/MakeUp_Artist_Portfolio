@@ -65,18 +65,23 @@ header .site-heading span {
   color: #EBBA4D;
 }
 
+header .site-heading .gold-dot {
+  font-size: 4rem;
+  color: #EBBA4D;
+}
+
 header .site-heading h2 {
   margin-top: 15%;
   margin-bottom: 10%;
 }
 
-header .site-heading .header-portoflio-link {
-  font-size: 2rem;
-  color: #EBBA4D;
-}
-
 header .site-heading .page-header {
   border-bottom: none;
+}
+
+header .site-heading .gold-link {
+  font-size: 2rem;
+  color: #EBBA4D;
 }
 
 @media only screen and (min-width: 768px) {
@@ -94,4 +99,79 @@ header .site-heading .page-header {
   background-attachment: scroll;
   background-size: cover;
   padding-bottom: 64.375%;
+}
+
+#services {
+  background-color: #F6F6F6;
+}
+
+#services .services-header {
+  margin-top: 15%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+#services .services-header h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+#services .services-header h1 .gold-dot {
+  font-size: 4rem;
+  color: #EBBA4D;
+}
+
+.services-details {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services-details h3 {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+}
+
+.services-details .services-details-header:after {
+  content: "";
+  padding-left: 40px;
+  border-bottom: 2px solid #EBBA4D;
+  position: relative;
+  top: -20px;
+}
+
+.services-details .services-details-header-middle:after {
+  content: "";
+  padding-left: 40px;
+  border-bottom: 2px solid #EBBA4D;
+  position: relative;
+  top: -35px;
+}
+
+.services-details .service-description {
+  margin-top: 8%;
+  font-style: italic;
+}
+
+.service-details-middle .service-description-middle {
+  text-align: -webkit-center;
+  font-style: italic;
+}
+
+.service-details-middle .service-description-middle p {
+  width: 50%;
+}
+
+.services-main-book {
+  margin-top: 5%;
+  margin-bottom: 15%;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.services-main-book a {
+  color: #EBBA4D;
 }
