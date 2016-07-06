@@ -208,3 +208,20 @@ header .site-heading .gold-link {
 #about .about-main p {
   font-style: italic;
 }
+
+#portfolio .images {
+  padding: 0;
+  margin: 0;
+  text-align: -webkit-center;
+  overflow: hidden;
+}
+
+#portfolio .images img {
+  height: 300px;
+}
+
+@media (max-width: 991px) {
+  #portfolio .first-img img {
+    height: auto;
+  }
+}
