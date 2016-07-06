@@ -216,6 +216,10 @@ header .site-heading .gold-link {
   overflow: hidden;
 }
 
+#portfolio .images:hover {
+  opacity: 0.5;
+}
+
 #portfolio .images img {
   height: 300px;
 }
@@ -224,4 +228,83 @@ header .site-heading .gold-link {
   #portfolio .first-img img {
     height: auto;
   }
+}
+
+#contact {
+  background-color: #FDFDFD;
+}
+
+#contact .contact-header {
+  margin-top: 15%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+#contact .contact-header h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+#contact .contact-header h1 .gold-dot {
+  font-size: 4rem;
+  color: #EBBA4D;
+}
+
+#contact .contact-data {
+  font-style: italic;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3%;
+}
+
+#contact .contact-line {
+  margin: 0 auto;
+  border-bottom: 2px solid #EBBA4D;
+  width: 5%;
+  margin-bottom: 3%;
+}
+
+#contact .contact-form input {
+  margin-top: 3%;
+  margin-bottom: 8%;
+  width: 23rem;
+  height: 3.5rem;
+  border-color: #EBBA4D;
+  color: #EBBA4D;
+  padding: 2%;
+  box-shadow: none;
+  font-style: italic;
+  background-color: #FDFDFD;
+}
+
+#contact .contact-form input:focus {
+  color: #EBBA4D;
+  border-color: #EBBA4D;
+  background-color: #FDFDFD;
+}
+
+#contact .contact-form textarea {
+  margin-top: 2%;
+  padding: 5%;
+  width: 30rem;
+  border-color: #EBBA4D;
+}
+
+#contact .contact-form button {
+  float: right;
+  background-color: #FDFDFD;
+  font-size: 2rem;
+  border: 1px solid #EBBA4D;
+  font-style: italic;
+}
+
+#contact .contact-icons {
+  text-align: center;
+  margin-top: 25%;
+}
+
+#contact .contact-icons a {
+  margin-right: 2%;
+  color: currentColor;
 }
