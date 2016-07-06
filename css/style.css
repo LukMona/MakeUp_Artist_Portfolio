@@ -299,6 +299,18 @@ header .site-heading .gold-link {
   font-style: italic;
 }
 
+@media (max-width: 991px) {
+  #contact .contact-form {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #contact .contact-form button {
+    float: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+
 #contact .contact-icons {
   text-align: center;
   margin-top: 25%;
