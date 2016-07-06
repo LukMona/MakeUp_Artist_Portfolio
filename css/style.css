@@ -87,3 +87,11 @@ header .site-heading .page-header {
     font-size: 80px;
   }
 }
+
+.photo-break {
+  background-image: url("../images/lips.jpg");
+  background-color: grey;
+  background-attachment: scroll;
+  background-size: cover;
+  padding-bottom: 64.375%;
+}
