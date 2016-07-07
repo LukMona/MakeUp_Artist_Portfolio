@@ -30,22 +30,22 @@ $(window).load(function() {
       var titleGetInfo = title.val();
 
       if(nameGetInfo.length < 5){
-        var newElement = $("<div class='error'>Name should be longer than 5 characters</div>");
+        var newElement = $("<div class='alert alert-info'>Name should be longer than 5 characters</div>");
         newElement.insertAfter(name);
       }
 
       if(testEmail.test(mailGetInfo) === false ){
-        var newElement2 = $("<div class='error'>Wrong mail address</div>");
+        var newElement2 = $("<div class='alert alert-info'>Wrong mail address</div>");
         newElement2.insertAfter(mail);
       }
 
       if(messageGetInfo.length < 5){
-        var newElement3 = $("<div class='error'>Title should be longer than 5 characters</div>");
+        var newElement3 = $("<div class='alert alert-info'>Title should be longer than 5 characters</div>");
         newElement3.insertAfter(title);
       }
 
       if(messageGetInfo.length < 10){
-        var newElement4 = $("<div class='error'>Message should be longer than 10 characters</div>");
+        var newElement4 = $("<div class='alert alert-info'>Message should be longer than 10 characters</div>");
         newElement4.insertAfter(message);
       }
 
