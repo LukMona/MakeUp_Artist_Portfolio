@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'alex_brushregular';
+  src: url("../fonts/alexbrush-regular-webfont.woff2") format("woff2"), url("../fonts/alexbrush-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header-mobile {
+  font-family: "alex_brushregular", Times New Roman, serif;
+  font-size: 4rem;
+}
+
 .header-mobile .navbar-toggle {
   border-color: transparent;
   margin-right: 5%;
@@ -15,12 +27,13 @@
 }
 
 .header-menu {
+  font-family: "alex_brushregular", Times New Roman, serif;
   background-color: #FDFDFD;
   border: none;
 }
 
 .header-menu ul li {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .header-menu ul li a {
@@ -43,6 +56,7 @@ header {
   background-color: grey;
   background-attachment: scroll;
   background-size: cover;
+  overflow: hidden;
 }
 
 header .site-heading {
@@ -207,6 +221,10 @@ header .site-heading .gold-link {
 
 #about .about-main p {
   font-style: italic;
+}
+
+#portfolio .row {
+  margin-top: 5%;
 }
 
 #portfolio .images {
