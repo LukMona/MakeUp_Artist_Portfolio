@@ -16,6 +16,13 @@ body {
   font-family: "linden_hillregular", Times New Roman, serif;
 }
 
+@font-face {
+  font-family: 'bootstrap_font';
+  src: url("assets/bootstrap/fonts/glyphicons-halflings-regular.eot") format("eot"), url("assets/bootstrap/fonts/glyphicons-halflings-regular.svg") format("svg"), url("assets/bootstrap/fonts/glyphicons-halflings-regular.ttf") format("ttf"), url("assets/bootstrap/fonts/glyphicons-halflings-regular.woff") format("woff"), url("assets/bootstrap/fonts/glyphicons-halflings-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .header-mobile {
   font-family: "alex_brushregular", Times New Roman, serif;
   font-size: 4rem;
@@ -257,54 +264,6 @@ header .site-heading .gold-link {
   #portfolio .first-img img {
     height: auto;
   }
-}
-
-#portfolio .fullScreen {
-  margin: 0 auto;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  background: rgba(48, 48, 48, 0.9);
-  text-align: -webkit-center;
-}
-
-#portfolio .fullScreen .close {
-  display: block;
-  margin-top: 2%;
-  margin-right: 2%;
-  color: #FDFDFD;
-}
-
-@media (max-width: 991px) {
-  #portfolio .fullScreen .imgFull {
-    margin-top: 25px;
-  }
-}
-
-#portfolio .fullScreen .less-margin {
-  margin-top: 2%;
-}
-
-#portfolio .fullScreen .description-full {
-  font-size: 2rem;
-  text-align: center;
-  display: block;
-  color: #FDFDFD;
-}
-
-#portfolio .fullScreen .description-full .left {
-  margin-right: 2%;
-}
-
-#portfolio .fullScreen .description-full .right {
-  margin-left: 2%;
-}
-
-#portfolio .fullScreen .description-full p {
-  margin-top: 2%;
 }
 
 #contact {
