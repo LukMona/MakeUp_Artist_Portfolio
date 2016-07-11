@@ -15,34 +15,6 @@ $(window).load(function() {
 
   parallaxSections();
 
-  function photoGallery(){
-    //looking for sections with portfolio
-    var imgs = $(".img-gallery");
-    var body = $("#portfolio");
-
-    //setting attributes for clicked imgs, full screen etc.
-    for (var i = 0; i < imgs.length; i++){
-      $(imgs[i]).on("click", function(){
-        var imgSrc = this.getAttribute("src");
-        var newDiv = $("<div class='container-fluid fullScreen'><div class='row'><div class='col-md-12 col-xs-12 col-sm-12 col-lg-12'><button class='close'><span>&#x2613;</span></button></div></div><div class='row'><div class='col-md-12 col-xs-12 col-sm-12 col-lg-12'><div class='imgFull'><img src=" + imgSrc + " class='img-responsive'></div></div></div><div class='row less-margin'><div class='col-md-12 col-xs-12 col-sm-12 col-lg-12'><div class='description-full'><span class='left'>&#60;</span><span class='right'>&#62;</span><p>opis</p></div></div></div></div>");
-
-        newDiv.appendTo(body);
-
-        //setting closing attribute for fullscreen img
-        newDiv.on("click", "button", function(){
-          $(".fullScreen").remove();
-        });
-
-      });
-    }
-  }
-
-  photoGallery();
-
-  function infiniteSlider(){
-    //
-  }
-
   function sendForm(){
     //setting attributes for sending for, to prevent from sending a form with basic errors
     $("#send").on("click", function(){
