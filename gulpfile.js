@@ -30,6 +30,13 @@ gulp.task("bootstrapJS", function(){
   .pipe(gulp.dest("assets/bootstrap/js"));
 });
 
+gulp.task("bootstrapFonts", function(){
+  return gulp.src([
+    "node_modules/bootstrap/dist/fonts/**",
+  ])
+  .pipe(gulp.dest("assets/bootstrap/fonts"));
+});
+
 gulp.task("jquery", function(){
   return gulp.src([
     "node_modules/jquery/dist/jquery.min.js",
