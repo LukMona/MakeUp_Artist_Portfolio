@@ -38,21 +38,32 @@ $(window).load(function() {
       }
 
       //mail regex
-      if(testEmail.test(mailGetInfo) === false ){
+      else if(testEmail.test(mailGetInfo) === false ){
         var newElement2 = $("<div'>Wrong mail address</div>");
         newElement2.insertAfter(mail);
       }
 
       //message title should has more thank 5 characters
-      if(messageGetInfo.length < 5){
+      else if(messageGetInfo.length < 5){
         var newElement3 = $("<div>Title should be longer than 5 characters</div>");
         newElement3.insertAfter(title);
       }
 
       //message title should has more thank 10 characters
-      if(messageGetInfo.length < 10){
+      else if(messageGetInfo.length < 10){
         var newElement4 = $("<div>Message should be longer than 10 characters</div>");
         newElement4.insertAfter(message);
+      }
+
+      else{
+        $.ajax({
+          url: 'send.php',
+          data: $("#contactForm").serialize(),
+          type: 'POST',
+          success: function(data){
+            $(".btn").html('<div style="background-color: green; padding: 5px; width: 100%; border-radius: 5px; color: white; "> We have received your request. Expect a feedback shortly.</div><br />');
+          }
+        });
       }
 
     });
