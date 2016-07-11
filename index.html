@@ -291,33 +291,37 @@
           <!-- CONTACT FORM -->
           <div class="contact-form">
             <div class="col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3 col-xs-12 col-sm-12">
-              <input id="name" type="text" name="userName" placeholder="Name">
-              <br>
-              <input id="mail" type="email" name="email" placeholder="Mail">
-              <br>
-              <input id="title" type="text" name="title" placeholder="Title">
+              <form id="contactForm" name="contact_form">
+                <div class="form">
+                  <input id="name" type="text" name="userName" placeholder="Name">
+                  <br>
+                  <input id="mail" type="email" name="email" placeholder="Mail">
+                  <br>
+                  <input id="title" type="text" name="title" placeholder="Title">
+                </div>
+                <div class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+                  <textarea id="message" name="body" rows="6" placeholder="Message"></textarea>
+                  <br>
+                  <button type="submit" id="send">
+                    <span>Send</span>
+                  </button>
+                </div>
+              </form>
             </div>
-            <div class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
-              <textarea id="message" rows="6" placeholder="Message"></textarea>
-              <br>
-              <button id="send">
-                <span>Send</span>
-              </button>
-            </div>
-          </div>
 
-          <!-- CONTACT ICONS -->
-          <div class="contact-icons">
-            <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
-              <div>
-                <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+            <!-- CONTACT ICONS -->
+            <div class="contact-icons">
+              <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+                <div>
+                  <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                </div>
               </div>
             </div>
+
+
           </div>
-
-
         </div>
       </div>
     </div>
