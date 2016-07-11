@@ -245,6 +245,23 @@ header .site-heading .gold-link {
   margin-top: 5%;
 }
 
+#portfolio .portfolio-header {
+  margin-top: 15%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+#portfolio .portfolio-header h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+#portfolio .portfolio-header h1 .gold-dot {
+  font-size: 4rem;
+  color: #EBBA4D;
+}
+
 #portfolio .images {
   padding: 0;
   margin: 0;
