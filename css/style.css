@@ -268,18 +268,43 @@ header .site-heading .gold-link {
   top: 0;
   z-index: 1;
   background: rgba(48, 48, 48, 0.9);
+  text-align: -webkit-center;
 }
 
 #portfolio .fullScreen .close {
   display: block;
-  margin-top: 75px;
-  margin-right: 50px;
+  margin-top: 2%;
+  margin-right: 2%;
   color: #FDFDFD;
 }
 
-#portfolio .fullScreen img {
+@media (max-width: 991px) {
+  #portfolio .fullScreen .imgFull {
+    margin-top: 25px;
+  }
+}
+
+#portfolio .fullScreen .less-margin {
+  margin-top: 2%;
+}
+
+#portfolio .fullScreen .description-full {
+  font-size: 2rem;
+  text-align: center;
   display: block;
-  margin: 150px auto;
+  color: #FDFDFD;
+}
+
+#portfolio .fullScreen .description-full .left {
+  margin-right: 2%;
+}
+
+#portfolio .fullScreen .description-full .right {
+  margin-left: 2%;
+}
+
+#portfolio .fullScreen .description-full p {
+  margin-top: 2%;
 }
 
 #contact {

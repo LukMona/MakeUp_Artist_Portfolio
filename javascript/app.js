@@ -24,7 +24,7 @@ $(window).load(function() {
     for (var i = 0; i < imgs.length; i++){
       $(imgs[i]).on("click", function(){
         var imgSrc = this.getAttribute("src");
-        var newDiv = $("<div class='fullScreen'><button class='close'><span>&#x2613;</span></button><img src=" + imgSrc + "></div>");
+        var newDiv = $("<div class='container-fluid fullScreen'><div class='row'><div class='col-md-12 col-xs-12 col-sm-12 col-lg-12'><button class='close'><span>&#x2613;</span></button></div></div><div class='row'><div class='col-md-12 col-xs-12 col-sm-12 col-lg-12'><div class='imgFull'><img src=" + imgSrc + " class='img-responsive'></div></div></div><div class='row less-margin'><div class='col-md-12 col-xs-12 col-sm-12 col-lg-12'><div class='description-full'><span class='left'>&#60;</span><span class='right'>&#62;</span><p>opis</p></div></div></div></div>");
 
         newDiv.appendTo(body);
 
@@ -38,6 +38,10 @@ $(window).load(function() {
   }
 
   photoGallery();
+
+  function infiniteSlider(){
+    //
+  }
 
   function sendForm(){
     //setting attributes for sending for, to prevent from sending a form with basic errors
