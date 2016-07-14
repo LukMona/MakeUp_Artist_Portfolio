@@ -70,4 +70,19 @@ $(window).load(function() {
   }
 
   sendForm();
+
+  function moveToTheSection(){
+    $("#myNavbar").find("a").on("click", function(){
+      var hrefInside = $(this).attr("href");
+      var checkHrefPosition = $(hrefInside).offset().top;
+
+      $("html, body").animate({
+        scrollTop: checkHrefPosition
+      }, 2000);
+      return false;
+    });
+
+  }
+
+  moveToTheSection();
 });
