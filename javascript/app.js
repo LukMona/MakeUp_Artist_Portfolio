@@ -72,6 +72,7 @@ $(window).load(function() {
   sendForm();
 
   function moveToTheSection(){
+    //setting what should happened on click
     $("#myNavbar").find("a").on("click", function(){
       var hrefInside = $(this).attr("href");
       var checkHrefPosition = $(hrefInside).offset().top;
