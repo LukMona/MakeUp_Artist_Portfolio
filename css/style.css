@@ -154,12 +154,12 @@ header .site-heading .gold-link {
   color: #EBBA4D;
 }
 
-.services-details {
+#services .services-details {
   text-align: center;
   text-transform: uppercase;
 }
 
-.services-details h3 {
+#services .services-details h3 {
   text-align: center;
   font-weight: bold;
   letter-spacing: 2px;
@@ -167,7 +167,14 @@ header .site-heading .gold-link {
   margin-bottom: 5%;
 }
 
-.services-details .services-details-header:after {
+@media (max-width: 991px) {
+  #services .services-details h3 {
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+  }
+}
+
+#services .services-details .services-details-header:after {
   content: "";
   padding-left: 40px;
   border-bottom: 2px solid #EBBA4D;
@@ -175,7 +182,13 @@ header .site-heading .gold-link {
   top: -20px;
 }
 
-.services-details .services-details-header-middle:after {
+@media (max-width: 991px) {
+  #services .services-details .services-details-header:after {
+    top: -40px;
+  }
+}
+
+#services .services-details .services-details-header-middle:after {
   content: "";
   padding-left: 40px;
   border-bottom: 2px solid #EBBA4D;
@@ -183,28 +196,46 @@ header .site-heading .gold-link {
   top: -40px;
 }
 
-.services-details .service-description {
+#services .services-details .service-description {
   margin-top: 8%;
   font-style: italic;
 }
 
-.service-details-middle .service-description-middle {
+@media (max-width: 991px) {
+  #services .services-details .service-description {
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 50%;
+  }
+  #services .services-details .service-description p {
+    margin-top: -10%;
+  }
+}
+
+#services .service-details-middle .service-description-middle {
   text-align: -webkit-center;
   font-style: italic;
 }
 
-.service-details-middle .service-description-middle p {
+#services .service-details-middle .service-description-middle p {
   width: 50%;
 }
 
-.services-main-book {
+@media (max-width: 991px) {
+  #services .service-details-middle .service-description-middle p {
+    margin-top: -2%;
+  }
+}
+
+#services .services-main-book {
   margin-top: 5%;
   margin-bottom: 15%;
   text-align: center;
   font-size: 2.5rem;
 }
 
-.services-main-book a {
+#services .services-main-book a {
   color: #EBBA4D;
 }
 
