@@ -260,12 +260,25 @@ header .site-heading .gold-link {
   color: #EBBA4D;
 }
 
+@media (max-width: 991px) {
+  #about .about-header {
+    margin-bottom: 0;
+  }
+}
+
 #about .about-main {
   margin-bottom: 15%;
 }
 
 #about .about-main .about-text {
+  text-align: justify;
   margin-top: 5%;
+}
+
+@media (max-width: 991px) {
+  #about .about-main .about-text {
+    margin-bottom: 4%;
+  }
 }
 
 #about .about-main p {
