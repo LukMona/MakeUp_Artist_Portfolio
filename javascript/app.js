@@ -78,7 +78,7 @@ $(window).load(function() {
       var checkHrefPosition = $(hrefInside).offset().top;
 
       $("html, body").animate({
-        scrollTop: checkHrefPosition
+        scrollTop: checkHrefPosition + 100
       }, 2000);
       return false;
     });
