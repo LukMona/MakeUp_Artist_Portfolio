@@ -39,12 +39,12 @@
 
       <!-- MENU ITEMS -->
       <ul class="nav collapse nav-justified navbar-collapse" id="myNavbar">
-        <li><a href="#">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#portfolioHeader">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#">Book Online</a></li>
+        <li><a href="#contact">Book Online</a></li>
       </ul>
 
     </div>
@@ -52,8 +52,8 @@
   <!-- END OF NAVIGATION -->
 
   <!-- HEADER -->
-  <header class="intro-header">
-    <div class="container-fluid">
+  <header class="intro-header " id="home">
+    <div class="container-fluid section-prlx">
       <div class="row">
         <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 main-header">
 
@@ -64,7 +64,7 @@
                 <span>.</span>
               </h1>
               <h2>makeup artist</h2>
-              <span><a class="gold-link" href="#">My portfolio &#8594;</a></span>
+              <span><a class="gold-link" href="#portfolio">My portfolio &#8594;</a></span>
             </div>
           </div>
 
@@ -78,7 +78,7 @@
   <section class="photo-break">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 main-photo-break">
+        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 main-photo-break section-prlx">
         </div>
       </div>
     </div>
@@ -140,7 +140,7 @@
           <div class="services-main-book">
             <div class="row">
               <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 main-search">
-                <span><a href="#">Book now &#8594;</a></span>
+                <span><a href="#contact">Book now &#8594;</a></span>
               </div>
             </div>
           </div>
@@ -194,34 +194,72 @@
     <div class="container-fluid">
 
       <div class="row">
-        <div class="col-md-4 col-xs-12 col-sm-12 col-lg-4 images first-img">
-          <img src="images/portfolio1.jpg" class="img-responsive">
-        </div>
-        <div class="col-md-4 col-xs-6 col-sm-6 col-lg-4 images">
-          <img src="images/portfolio2.jpg" class="img-responsive">
-        </div>
-        <div class="col-md-4 col-xs-6 col-sm-6 col-lg-4 images">
-          <img src="images/portfolio3.jpg" class="img-responsive">
+
+        <div class="portfolio-header">
+          <h1 id="portfolioHeader">Portfolio<span class="gold-dot">.</span></h1>
         </div>
 
-        <div class="col-md-4 col-xs-6 col-sm-6 col-lg-4 images">
-          <img src="images/portfolio4.jpg" class="img-responsive">
-        </div>
-        <div class="col-md-4 col-xs-6 col-sm-6 col-lg-4 images">
-          <img src="images/portfolio5.jpg" class="img-responsive">
-        </div>
-        <div class="col-md-4 col-xs-6 col-sm-6 col-lg-4 images">
-          <img src="images/portfolio6.jpg" class="img-responsive">
-        </div>
+        <!-- CAROUSEL -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-        <div class="col-md-4 col-xs-6 col-sm-6 col-lg-4 images">
-          <img src="images/portfolio7.jpg" class="img-responsive">
-        </div>
-        <div class="col-md-4 col-xs-6 col-sm-6 col-lg-4 images">
-          <img src="images/portfolio8.jpg" class="img-responsive">
-        </div>
-        <div class="col-md-4 col-xs-6 col-sm-6 col-lg-4 images">
-          <img src="images/portfolio9.jpg" class="img-responsive">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+            <li data-target="#myCarousel" data-slide-to="8"></li>
+          </ol>
+
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/portfolio1.jpg">
+            </div>
+
+            <div class="item">
+              <img src="images/portfolio2.jpg">
+            </div>
+
+            <div class="item">
+              <img src="images/portfolio3.jpg">
+            </div>
+
+            <div class="item">
+              <img src="images/portfolio4.jpg">
+            </div>
+
+            <div class="item">
+              <img src="images/portfolio5.jpg">
+            </div>
+
+            <div class="item">
+              <img src="images/portfolio6.jpg">
+            </div>
+
+            <div class="item">
+              <img src="images/portfolio7.jpg">
+            </div>
+
+            <div class="item">
+              <img src="images/portfolio8.jpg">
+            </div>
+
+            <div class="item">
+              <img src="images/portfolio9.jpg">
+            </div>
+          </div>
+
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
 
       </div>
@@ -247,42 +285,44 @@
             <span>Tel: 123-456-789</span>
           </div>
 
-          <div class="contact-line">
-          </div>
-
           <!-- CONTACT FORM -->
           <div class="contact-form">
+            <form id="contactForm" name="contact_form">
             <div class="col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3 col-xs-12 col-sm-12">
-              <input type="text" name="userName" placeholder="Name">
-              <br>
-              <input type="email" name="email" placeholder="Mail">
-              <br>
-              <input type="text" name="title" placeholder="Title">
-            </div>
-            <div class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
-              <textarea rows="6" placeholder="Message"></textarea>
-              <br>
-              <button>
-                <span>Send</span>
-              </button>
-            </div>
+                <div class="form">
+                  <input id="name" type="text" name="userName" placeholder="Name">
+                  <br>
+                  <input id="mail" type="email" name="email" placeholder="Mail">
+                  <br>
+                  <input id="title" type="text" name="title" placeholder="Title">
+                </div>
+              </div>
+
+                <div class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+                  <textarea id="message" name="body" rows="6" placeholder="Message"></textarea>
+                  <br>
+                  <button type="submit" id="send">
+                    <span>Send</span>
+                  </button>
+                </div>
+            </form>
           </div>
 
-          <!-- CONTACT ICONS -->
-          <div class="contact-icons">
-            <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
-              <div>
-                <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+            <!-- CONTACT ICONS -->
+            <div class="contact-icons">
+              <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+                <div>
+                  <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                </div>
               </div>
             </div>
+
+
           </div>
-
-
         </div>
       </div>
-    </div>
   </section>
   <!-- END OF CONTACT SECTION -->
 
@@ -299,7 +339,9 @@
 
   <!-- SCRIPTS -->
   <script src="assets/jquery/jquery.min.js"></script>
+  <script src="assets/timekit/booking.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="javascript/app.js"></script>
 </body>
 
 </html>
