@@ -1,5 +1,6 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
+var jshint = require("gulp-jshint");
 
 gulp.task("sass", function(){
   return gulp.src("scss/**/*.scss")
@@ -12,6 +13,12 @@ gulp.task("sass", function(){
 
 gulp.task("watch", function(){
   gulp.watch("scss/**/*.scss", ["sass"]);
+});
+
+gulp.task("jshint", function(){
+  return gulp.src("javascript/app.js")
+  .pipe(jshint())
+  .pipe(jshint.reporter("default"));
 });
 
 gulp.task("bootstrapCSS", function(){
