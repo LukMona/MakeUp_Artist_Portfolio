@@ -78,12 +78,31 @@ $(window).load(function() {
       var checkHrefPosition = $(hrefInside).offset().top;
 
       $("html, body").animate({
-        scrollTop: checkHrefPosition + 100
+        scrollTop: checkHrefPosition - 60
       }, 2000);
+
+      var navbar = $(".navbar-toggle");
+      var list = $("#myNavbar");
+      navbar.attr("aria-expanded", "false");
+      list.attr("aria-expanded", "false");
+      list.removeClass("in");
+
       return false;
     });
+
+		$("#bookNow").find("a").on("click", function(){
+			var hrefInside = $(this).attr("href");
+			var checkHrefPosition = $(hrefInside).offset().top;
+
+      console.log("halo");
+
+			$("html, body").animate({
+				scrollTop: checkHrefPosition
+			}, 2000);
+		});
 
   }
 
   moveToTheSection();
+
 });
