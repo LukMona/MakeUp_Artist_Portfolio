@@ -188,12 +188,42 @@ header .site-heading .gold-link {
   }
 }
 
+@media (max-width: 504px) {
+  #services .services-details .services-details-header:after {
+    top: -35px;
+  }
+}
+
+@media (max-width: 320px) {
+  #services .services-details .services-details-header:after {
+    top: -30px;
+  }
+}
+
 #services .services-details .services-details-header-middle:after {
   content: "";
   padding-left: 40px;
   border-bottom: 2px solid #EBBA4D;
   position: relative;
   top: -40px;
+}
+
+@media (max-width: 991px) {
+  #services .services-details .services-details-header-middle:after {
+    top: -40px;
+  }
+}
+
+@media (max-width: 504px) {
+  #services .services-details .services-details-header-middle:after {
+    top: -35px;
+  }
+}
+
+@media (max-width: 320px) {
+  #services .services-details .services-details-header-middle:after {
+    top: -30px;
+  }
 }
 
 #services .services-details .service-description {
@@ -302,23 +332,13 @@ header .site-heading .gold-link {
   color: #EBBA4D;
 }
 
-#portfolio .images {
-  padding: 0;
-  margin: 0;
-  text-align: -webkit-center;
-  overflow: hidden;
+#portfolio img {
+  height: 85vh;
+  margin: 0 auto;
 }
 
-#portfolio .images:hover {
-  opacity: 0.5;
-}
-
-#portfolio .images img {
-  height: 300px;
-}
-
-@media (max-width: 991px) {
-  #portfolio .first-img img {
+@media (max-width: 558px) {
+  #portfolio img {
     height: auto;
   }
 }
