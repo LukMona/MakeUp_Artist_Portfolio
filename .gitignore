@@ -2,6 +2,7 @@ scss
 node_modules
 *.php
 vendor
+assets
 
 # Compiled source #
 ###################
